@@ -46,7 +46,7 @@ export class FFModuleHelper extends FFModule {
  
     private getUserFromAccessToken(access_token: string): any {
         // check the redis store
-        // TODO: Need to implement the functionality to store UserObject against AccessToken or it already exists.
+        // TODO: Need to implement the functionality to retrieve UserObject for the AccessToken or get cookie from chief-currentUserType cookie
         return 
     }
 
