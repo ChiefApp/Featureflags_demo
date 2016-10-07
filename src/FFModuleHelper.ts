@@ -44,10 +44,9 @@ export class FFModuleHelper extends FFModule {
         //Promise.resolve(undefined)
     }  
  
-    
-
     private getUserFromAccessToken(access_token: string): any {
         // check the redis store
+        // TODO: Need to implement the functionality to store UserObject against AccessToken or it already exists.
         return 
     }
 
@@ -83,9 +82,6 @@ export class FFModuleHelper extends FFModule {
             }
     }
 
-    getFeaturesForUserGroup(): FeatureFlags {
-        return
-    }
 
     getElement(featureName: string, ffElements: Array<Feature | FeatureGrouping>): Feature | FeatureGrouping {
         // remove the Variations
